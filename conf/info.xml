@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon version="0.2">
+    <title xml:lang="ko">금지단어</title>
+    <description xml:lang="ko">
+        내용에 금지단어가 들어가면 글작성을 막습니다.
+    </description>
+    <version>1.001</version>
+    <date></date>
+    <author email_address="" link="">
+        <name xml:lang="ko">kdp</name>
+    </author>
+	<extra_vars>
+		<group>
+		<title xml:lang="ko">알림</title>
+		<var name="denied_alert" type="select">
+			<title xml:lang="ko">차단키워드알림</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">삭제 게시글</title>
+		<var name="delete" type="select">
+			<title xml:lang="ko">삭제표시</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">필터링 설정</title>
+		<var name="denied_smart" type="select">
+			<title xml:lang="ko">스마트필터링</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_smart_len" type="text">
+            <title xml:lang="ko">허용길이</title>
+        </var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">닉네임</title>
+		<var name="denied_nick" type="select">
+			<title xml:lang="ko">금지닉네임</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_word_nick" type="text">
+            <title xml:lang="ko">금지닉네임</title>
+        </var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">레벨</title>
+		<var name="denied_level" type="select">
+			<title xml:lang="ko">레벨게시글작성금지</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_levelup" type="text">
+            <title xml:lang="ko">게시글작성권한레벨</title>
+        </var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">댓글</title>
+		<var name="denied_comment" type="select">
+			<title xml:lang="ko">금지댓글</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_word_comment" type="text">
+            <title xml:lang="ko">금지댓글</title>
+        </var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">제목</title>
+		<var name="denied_title" type="select">
+			<title xml:lang="ko">금지제목</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_word_title" type="text">
+            <title xml:lang="ko">금지제목</title>
+        </var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">내용</title>
+		<var name="denied_content" type="select">
+			<title xml:lang="ko">금지내용</title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_word_content" type="text">
+            <title xml:lang="ko">금지내용</title>
+        </var>
+		</group>
+		
+		<group>
+		<title xml:lang="ko">제목과 내용이 같은글</title>
+		<var name="denied_same_len" type="select">
+			<title xml:lang="ko">제목과 내용(제목의 길이만큼 확인)이 같은글 금지 </title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_same_instr" type="select">
+			<title xml:lang="ko">제목과 내용이 같이 포함하는글 금지 </title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		<var name="denied_same" type="select">
+			<title xml:lang="ko">제목과 내용이 같은글 금지 </title>
+			<options value="Y">
+				<title xml:lang="ko">사용</title>
+			</options>
+			<options value="N">
+				<title xml:lang="ko">사용하지 않음</title>
+			</options>
+			<description />
+		</var>
+		</group>
+		
+		<var name="explode_word" type="text">
+            <title xml:lang="ko">구분단어</title>
+        </var>
+	</extra_vars>
+</addon>
